@@ -7,11 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		047324111A1271930019DD57 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0473240F1A1271930019DD57 /* Localizable.strings */; };
 		04B37B811A126ED90079594F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37B801A126ED90079594F /* AppDelegate.m */; };
 		04B37B831A126ED90079594F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37B821A126ED90079594F /* main.m */; };
 		04B37B851A126ED90079594F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B37B841A126ED90079594F /* Images.xcassets */; };
 		04B37B881A126ED90079594F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B37B861A126ED90079594F /* MainMenu.xib */; };
 		04B37B941A126ED90079594F /* SubsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37B931A126ED90079594F /* SubsTests.m */; };
+		04B37BA21A126F330079594F /* JAQVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37B9F1A126F330079594F /* JAQVideo.m */; };
+		04B37BA31A126F330079594F /* JAQSubtitleResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37BA11A126F330079594F /* JAQSubtitleResult.m */; };
+		04B37BA71A126F5E0079594F /* JAQDraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37BA61A126F5E0079594F /* JAQDraggableView.m */; };
+		04B37BAF1A126F720079594F /* JAQTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37BAA1A126F720079594F /* JAQTutorialViewController.m */; };
+		04B37BB01A126F720079594F /* JAQTutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B37BAB1A126F720079594F /* JAQTutorialViewController.xib */; };
+		04B37BB11A126F720079594F /* JAQLoaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37BAD1A126F720079594F /* JAQLoaderViewController.m */; };
+		04B37BB21A126F720079594F /* JAQLoaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B37BAE1A126F720079594F /* JAQLoaderViewController.xib */; };
+		04B37BB61A126F8D0079594F /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37BB51A126F8D0079594F /* LaunchAtLoginController.m */; };
+		04B37BBD1A126F990079594F /* KBButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37BB81A126F990079594F /* KBButton.m */; };
+		04B37BBE1A126F990079594F /* KBButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37BBA1A126F990079594F /* KBButtonCell.m */; };
+		04B37BBF1A126F990079594F /* NSColor+ColorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37BBC1A126F990079594F /* NSColor+ColorExtensions.m */; };
+		04B37BC21A126FA20079594F /* YRKSpinningProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37BC11A126FA20079594F /* YRKSpinningProgressIndicator.m */; };
+		04B37BC81A126FB80079594F /* JAQUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37BC51A126FB80079594F /* JAQUtils.m */; };
+		04B37BC91A126FB80079594F /* JAQSubtitleDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37BC71A126FB80079594F /* JAQSubtitleDownloader.m */; };
+		04B7DC0E1A12BB6000B3EA1D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B7DC0D1A12BB6000B3EA1D /* libz.dylib */; };
+		2AAB96708E51C3063F3511A7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2633524794EF325907477144 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0473240F1A1271930019DD57 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		047324101A1271930019DD57 /* Subs-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Subs-Prefix.pch"; sourceTree = "<group>"; };
 		04B37B7A1A126ED90079594F /* Subs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Subs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B37B7E1A126ED90079594F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04B37B7F1A126ED90079594F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -35,6 +54,37 @@
 		04B37B8D1A126ED90079594F /* SubsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SubsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B37B921A126ED90079594F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04B37B931A126ED90079594F /* SubsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubsTests.m; sourceTree = "<group>"; };
+		04B37B9E1A126F330079594F /* JAQVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JAQVideo.h; path = Model/JAQVideo.h; sourceTree = "<group>"; };
+		04B37B9F1A126F330079594F /* JAQVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JAQVideo.m; path = Model/JAQVideo.m; sourceTree = "<group>"; };
+		04B37BA01A126F330079594F /* JAQSubtitleResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JAQSubtitleResult.h; path = Model/JAQSubtitleResult.h; sourceTree = "<group>"; };
+		04B37BA11A126F330079594F /* JAQSubtitleResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JAQSubtitleResult.m; path = Model/JAQSubtitleResult.m; sourceTree = "<group>"; };
+		04B37BA51A126F5E0079594F /* JAQDraggableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JAQDraggableView.h; path = Views/JAQDraggableView.h; sourceTree = "<group>"; };
+		04B37BA61A126F5E0079594F /* JAQDraggableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JAQDraggableView.m; path = Views/JAQDraggableView.m; sourceTree = "<group>"; };
+		04B37BA91A126F720079594F /* JAQTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JAQTutorialViewController.h; path = ViewControllers/JAQTutorialViewController.h; sourceTree = "<group>"; };
+		04B37BAA1A126F720079594F /* JAQTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JAQTutorialViewController.m; path = ViewControllers/JAQTutorialViewController.m; sourceTree = "<group>"; };
+		04B37BAB1A126F720079594F /* JAQTutorialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JAQTutorialViewController.xib; path = ViewControllers/JAQTutorialViewController.xib; sourceTree = "<group>"; };
+		04B37BAC1A126F720079594F /* JAQLoaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JAQLoaderViewController.h; path = ViewControllers/JAQLoaderViewController.h; sourceTree = "<group>"; };
+		04B37BAD1A126F720079594F /* JAQLoaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JAQLoaderViewController.m; path = ViewControllers/JAQLoaderViewController.m; sourceTree = "<group>"; };
+		04B37BAE1A126F720079594F /* JAQLoaderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JAQLoaderViewController.xib; path = ViewControllers/JAQLoaderViewController.xib; sourceTree = "<group>"; };
+		04B37BB41A126F8D0079594F /* LaunchAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAtLoginController.h; sourceTree = "<group>"; };
+		04B37BB51A126F8D0079594F /* LaunchAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAtLoginController.m; sourceTree = "<group>"; };
+		04B37BB71A126F990079594F /* KBButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBButton.h; sourceTree = "<group>"; };
+		04B37BB81A126F990079594F /* KBButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBButton.m; sourceTree = "<group>"; };
+		04B37BB91A126F990079594F /* KBButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBButtonCell.h; sourceTree = "<group>"; };
+		04B37BBA1A126F990079594F /* KBButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBButtonCell.m; sourceTree = "<group>"; };
+		04B37BBB1A126F990079594F /* NSColor+ColorExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+ColorExtensions.h"; sourceTree = "<group>"; };
+		04B37BBC1A126F990079594F /* NSColor+ColorExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+ColorExtensions.m"; sourceTree = "<group>"; };
+		04B37BC01A126FA20079594F /* YRKSpinningProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRKSpinningProgressIndicator.h; sourceTree = "<group>"; };
+		04B37BC11A126FA20079594F /* YRKSpinningProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRKSpinningProgressIndicator.m; sourceTree = "<group>"; };
+		04B37BC41A126FB80079594F /* JAQUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JAQUtils.h; path = Data/JAQUtils.h; sourceTree = "<group>"; };
+		04B37BC51A126FB80079594F /* JAQUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JAQUtils.m; path = Data/JAQUtils.m; sourceTree = "<group>"; };
+		04B37BC61A126FB80079594F /* JAQSubtitleDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JAQSubtitleDownloader.h; path = Data/JAQSubtitleDownloader.h; sourceTree = "<group>"; };
+		04B37BC71A126FB80079594F /* JAQSubtitleDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JAQSubtitleDownloader.m; path = Data/JAQSubtitleDownloader.m; sourceTree = "<group>"; };
+		04B7DC0C1A12BB0900B3EA1D /* JAQConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JAQConstants.h; path = Data/JAQConstants.h; sourceTree = "<group>"; };
+		04B7DC0D1A12BB6000B3EA1D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		2633524794EF325907477144 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		657DA9C8379B610350F77832 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		68BBE0D41BA98E8E076C965C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +92,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B7DC0E1A12BB6000B3EA1D /* libz.dylib in Frameworks */,
+				2AAB96708E51C3063F3511A7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +113,8 @@
 				04B37B7C1A126ED90079594F /* Subs */,
 				04B37B901A126ED90079594F /* SubsTests */,
 				04B37B7B1A126ED90079594F /* Products */,
+				8F0C1D73E2971D1F80E40E79 /* Pods */,
+				71E13CC85155CBDC54729610 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +132,11 @@
 			children = (
 				04B37B7F1A126ED90079594F /* AppDelegate.h */,
 				04B37B801A126ED90079594F /* AppDelegate.m */,
+				04B37BC31A126FAC0079594F /* Data */,
+				04B37BB31A126F7E0079594F /* Dependencies */,
+				04B37BA81A126F610079594F /* ViewControllers */,
+				04B37BA41A126F500079594F /* Views */,
+				04B37B9D1A126EEA0079594F /* Model */,
 				04B37B841A126ED90079594F /* Images.xcassets */,
 				04B37B861A126ED90079594F /* MainMenu.xib */,
 				04B37B7D1A126ED90079594F /* Supporting Files */,
@@ -88,6 +147,8 @@
 		04B37B7D1A126ED90079594F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0473240F1A1271930019DD57 /* Localizable.strings */,
+				047324101A1271930019DD57 /* Subs-Prefix.pch */,
 				04B37B7E1A126ED90079594F /* Info.plist */,
 				04B37B821A126ED90079594F /* main.m */,
 			);
@@ -111,6 +172,113 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		04B37B9D1A126EEA0079594F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04B37B9E1A126F330079594F /* JAQVideo.h */,
+				04B37B9F1A126F330079594F /* JAQVideo.m */,
+				04B37BA01A126F330079594F /* JAQSubtitleResult.h */,
+				04B37BA11A126F330079594F /* JAQSubtitleResult.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		04B37BA41A126F500079594F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04B37BA51A126F5E0079594F /* JAQDraggableView.h */,
+				04B37BA61A126F5E0079594F /* JAQDraggableView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		04B37BA81A126F610079594F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04B37BA91A126F720079594F /* JAQTutorialViewController.h */,
+				04B37BAA1A126F720079594F /* JAQTutorialViewController.m */,
+				04B37BAB1A126F720079594F /* JAQTutorialViewController.xib */,
+				04B37BAC1A126F720079594F /* JAQLoaderViewController.h */,
+				04B37BAD1A126F720079594F /* JAQLoaderViewController.m */,
+				04B37BAE1A126F720079594F /* JAQLoaderViewController.xib */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		04B37BB31A126F7E0079594F /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				04B37BCA1A126FD70079594F /* YRKSpinningProgressIndicator */,
+				04B37BCB1A126FF90079594F /* KBButton */,
+				04B37BCC1A1270020079594F /* LaunchAtLoginController */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		04B37BC31A126FAC0079594F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				04B7DC0C1A12BB0900B3EA1D /* JAQConstants.h */,
+				04B37BC41A126FB80079594F /* JAQUtils.h */,
+				04B37BC51A126FB80079594F /* JAQUtils.m */,
+				04B37BC61A126FB80079594F /* JAQSubtitleDownloader.h */,
+				04B37BC71A126FB80079594F /* JAQSubtitleDownloader.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		04B37BCA1A126FD70079594F /* YRKSpinningProgressIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				04B37BC01A126FA20079594F /* YRKSpinningProgressIndicator.h */,
+				04B37BC11A126FA20079594F /* YRKSpinningProgressIndicator.m */,
+			);
+			name = YRKSpinningProgressIndicator;
+			path = Dependencies/YRKSpinningProgressIndicator;
+			sourceTree = "<group>";
+		};
+		04B37BCB1A126FF90079594F /* KBButton */ = {
+			isa = PBXGroup;
+			children = (
+				04B37BB71A126F990079594F /* KBButton.h */,
+				04B37BB81A126F990079594F /* KBButton.m */,
+				04B37BB91A126F990079594F /* KBButtonCell.h */,
+				04B37BBA1A126F990079594F /* KBButtonCell.m */,
+				04B37BBB1A126F990079594F /* NSColor+ColorExtensions.h */,
+				04B37BBC1A126F990079594F /* NSColor+ColorExtensions.m */,
+			);
+			name = KBButton;
+			path = Dependencies/KBButton;
+			sourceTree = "<group>";
+		};
+		04B37BCC1A1270020079594F /* LaunchAtLoginController */ = {
+			isa = PBXGroup;
+			children = (
+				04B37BB41A126F8D0079594F /* LaunchAtLoginController.h */,
+				04B37BB51A126F8D0079594F /* LaunchAtLoginController.m */,
+			);
+			name = LaunchAtLoginController;
+			path = Dependencies/LaunchAtLoginController;
+			sourceTree = "<group>";
+		};
+		71E13CC85155CBDC54729610 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04B7DC0D1A12BB6000B3EA1D /* libz.dylib */,
+				2633524794EF325907477144 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F0C1D73E2971D1F80E40E79 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				657DA9C8379B610350F77832 /* Pods.debug.xcconfig */,
+				68BBE0D41BA98E8E076C965C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +286,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04B37B971A126ED90079594F /* Build configuration list for PBXNativeTarget "Subs" */;
 			buildPhases = (
+				4101AA469E47A3A5485F98A0 /* Check Pods Manifest.lock */,
 				04B37B761A126ED90079594F /* Sources */,
 				04B37B771A126ED90079594F /* Frameworks */,
 				04B37B781A126ED90079594F /* Resources */,
+				012F28313BD46777ABB450F3 /* Copy Pods Resources */,
+				04B7DC0F1A12BBCC00B3EA1D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -191,8 +362,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047324111A1271930019DD57 /* Localizable.strings in Resources */,
 				04B37B851A126ED90079594F /* Images.xcassets in Resources */,
 				04B37B881A126ED90079594F /* MainMenu.xib in Resources */,
+				04B37BB21A126F720079594F /* JAQLoaderViewController.xib in Resources */,
+				04B37BB01A126F720079594F /* JAQTutorialViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,13 +379,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		012F28313BD46777ABB450F3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		04B7DC0F1A12BBCC00B3EA1D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\n# Get project info\nbuildPlist=\"${PROJECT_DIR}/${INFOPLIST_FILE}\"\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$buildPlist\")\n\n# Increment the buildNumber (A.K.A CFBundleVersion)\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$buildPlist\"";
+		};
+		4101AA469E47A3A5485F98A0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04B37B761A126ED90079594F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				04B37B831A126ED90079594F /* main.m in Sources */,
+				04B37BB61A126F8D0079594F /* LaunchAtLoginController.m in Sources */,
+				04B37BA31A126F330079594F /* JAQSubtitleResult.m in Sources */,
+				04B37BA71A126F5E0079594F /* JAQDraggableView.m in Sources */,
+				04B37BBF1A126F990079594F /* NSColor+ColorExtensions.m in Sources */,
 				04B37B811A126ED90079594F /* AppDelegate.m in Sources */,
+				04B37BB11A126F720079594F /* JAQLoaderViewController.m in Sources */,
+				04B37BC21A126FA20079594F /* YRKSpinningProgressIndicator.m in Sources */,
+				04B37BBE1A126F990079594F /* KBButtonCell.m in Sources */,
+				04B37BA21A126F330079594F /* JAQVideo.m in Sources */,
+				04B37BAF1A126F720079594F /* JAQTutorialViewController.m in Sources */,
+				04B37BC91A126FB80079594F /* JAQSubtitleDownloader.m in Sources */,
+				04B37BC81A126FB80079594F /* JAQUtils.m in Sources */,
+				04B37BBD1A126F990079594F /* KBButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,9 +555,11 @@
 		};
 		04B37B981A126ED90079594F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 657DA9C8379B610350F77832 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREFIX_HEADER = "Subs/Subs-Prefix.pch";
 				INFOPLIST_FILE = Subs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -334,9 +568,11 @@
 		};
 		04B37B991A126ED90079594F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68BBE0D41BA98E8E076C965C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREFIX_HEADER = "Subs/Subs-Prefix.pch";
 				INFOPLIST_FILE = Subs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -398,6 +634,7 @@
 				04B37B991A126ED90079594F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04B37B9A1A126ED90079594F /* Build configuration list for PBXNativeTarget "SubsTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +643,7 @@
 				04B37B9C1A126ED90079594F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
