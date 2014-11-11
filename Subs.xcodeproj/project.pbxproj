@@ -283,8 +283,7 @@
 			children = (
 				04D6969C1A12CA070085B054 /* Subs.zip */,
 			);
-			name = Download;
-			path = SubsTests;
+			path = Download;
 			sourceTree = "<group>";
 		};
 		71E13CC85155CBDC54729610 /* Frameworks */ = {
