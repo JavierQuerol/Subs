@@ -13,6 +13,7 @@
 #import "JAQTutorialViewController.h"
 #import "JAQDraggableView.h"
 #import "JAQVideo.h"
+#import "JAQConstants.h"
 
 typedef enum : NSUInteger {
 	JAQVideoPlaying,
