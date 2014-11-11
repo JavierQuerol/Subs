@@ -29,6 +29,7 @@
 		04B37BC81A126FB80079594F /* JAQUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37BC51A126FB80079594F /* JAQUtils.m */; };
 		04B37BC91A126FB80079594F /* JAQSubtitleDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37BC71A126FB80079594F /* JAQSubtitleDownloader.m */; };
 		04B7DC0E1A12BB6000B3EA1D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B7DC0D1A12BB6000B3EA1D /* libz.dylib */; };
+		04D6969D1A12CA070085B054 /* Subs.zip in Resources */ = {isa = PBXBuildFile; fileRef = 04D6969C1A12CA070085B054 /* Subs.zip */; };
 		2AAB96708E51C3063F3511A7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2633524794EF325907477144 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		04B37BC71A126FB80079594F /* JAQSubtitleDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JAQSubtitleDownloader.m; path = Data/JAQSubtitleDownloader.m; sourceTree = "<group>"; };
 		04B7DC0C1A12BB0900B3EA1D /* JAQConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JAQConstants.h; path = Data/JAQConstants.h; sourceTree = "<group>"; };
 		04B7DC0D1A12BB6000B3EA1D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		04D6969C1A12CA070085B054 /* Subs.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Subs.zip; sourceTree = "<group>"; };
 		2633524794EF325907477144 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		657DA9C8379B610350F77832 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		68BBE0D41BA98E8E076C965C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			children = (
 				04B37B7C1A126ED90079594F /* Subs */,
 				04B37B901A126ED90079594F /* SubsTests */,
+				04D6969B1A12C9EC0085B054 /* Download */,
 				04B37B7B1A126ED90079594F /* Products */,
 				8F0C1D73E2971D1F80E40E79 /* Pods */,
 				71E13CC85155CBDC54729610 /* Frameworks */,
@@ -275,6 +278,15 @@
 			path = Dependencies/LaunchAtLoginController;
 			sourceTree = "<group>";
 		};
+		04D6969B1A12C9EC0085B054 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				04D6969C1A12CA070085B054 /* Subs.zip */,
+			);
+			name = Download;
+			path = SubsTests;
+			sourceTree = "<group>";
+		};
 		71E13CC85155CBDC54729610 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -376,6 +388,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D6969D1A12CA070085B054 /* Subs.zip in Resources */,
 				047324111A1271930019DD57 /* Localizable.strings in Resources */,
 				04B37B851A126ED90079594F /* Images.xcassets in Resources */,
 				04B37B881A126ED90079594F /* MainMenu.xib in Resources */,
