@@ -14,6 +14,7 @@
 #import "JAQDraggableView.h"
 #import "JAQVideo.h"
 #import "JAQConstants.h"
+#import "PFMoveApplication.h"
 
 typedef enum : NSUInteger {
 	JAQVideoPlaying,
@@ -34,6 +35,7 @@ typedef enum : NSUInteger {
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+	PFMoveToApplicationsFolderIfNecessary();
 	const AEEventClass class = kCoreEventClass;
 	[[NSAppleEventManager sharedAppleEventManager] setEventHandler:self
 													   andSelector:@selector(handleAppleEvent:withReplyEvent:)

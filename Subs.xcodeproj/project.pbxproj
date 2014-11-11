@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0418376D1A12C7F100F07E0E /* PFMoveApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 0418376C1A12C7F100F07E0E /* PFMoveApplication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		047324111A1271930019DD57 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0473240F1A1271930019DD57 /* Localizable.strings */; };
 		04B37B811A126ED90079594F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37B801A126ED90079594F /* AppDelegate.m */; };
 		04B37B831A126ED90079594F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37B821A126ED90079594F /* main.m */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0418376B1A12C7F100F07E0E /* PFMoveApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMoveApplication.h; sourceTree = "<group>"; };
+		0418376C1A12C7F100F07E0E /* PFMoveApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFMoveApplication.m; sourceTree = "<group>"; };
 		0473240F1A1271930019DD57 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		047324101A1271930019DD57 /* Subs-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Subs-Prefix.pch"; sourceTree = "<group>"; };
 		04B37B7A1A126ED90079594F /* Subs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Subs.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +110,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0418376A1A12C7E500F07E0E /* PFMoveApplication */ = {
+			isa = PBXGroup;
+			children = (
+				0418376B1A12C7F100F07E0E /* PFMoveApplication.h */,
+				0418376C1A12C7F100F07E0E /* PFMoveApplication.m */,
+			);
+			name = PFMoveApplication;
+			path = Dependencies/PFMoveApplication;
+			sourceTree = "<group>";
+		};
 		04B37B711A126ED90079594F = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +221,7 @@
 		04B37BB31A126F7E0079594F /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				0418376A1A12C7E500F07E0E /* PFMoveApplication */,
 				04B37BCA1A126FD70079594F /* YRKSpinningProgressIndicator */,
 				04B37BCB1A126FF90079594F /* KBButton */,
 				04B37BCC1A1270020079594F /* LaunchAtLoginController */,
@@ -432,6 +446,7 @@
 			files = (
 				04B37B831A126ED90079594F /* main.m in Sources */,
 				04B37BB61A126F8D0079594F /* LaunchAtLoginController.m in Sources */,
+				0418376D1A12C7F100F07E0E /* PFMoveApplication.m in Sources */,
 				04B37BA31A126F330079594F /* JAQSubtitleResult.m in Sources */,
 				04B37BA71A126F5E0079594F /* JAQDraggableView.m in Sources */,
 				04B37BBF1A126F990079594F /* NSColor+ColorExtensions.m in Sources */,
