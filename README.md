@@ -1,5 +1,9 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/JavierQuerol/Subs/master/Subs/Images.xcassets/AppIcon.appiconset/Icon_128x128@2x.png" alt="Subs" title="Subs">
+</p>
 # Subs
-![Subs](https://raw.githubusercontent.com/JavierQuerol/Subs/master/Subs/Images.xcassets/AppIcon.appiconset/Icon_128x128@2x.png)
+[![Twitter](http://img.shields.io/badge/contact-@javierquerol-blue.svg?style=flat)](http://twitter.com/javierquerol)
+[![GitHub Issues](http://img.shields.io/github/issues/javierquerol/Subs.svg?style=flat)](http://github.com/javierquerol/Subs/issues)
 
 ## Download
 You can download the app ready to use [here](http://javierquerol.es/subs)
@@ -23,7 +27,7 @@ Simply drag and drop a video file onto the menubar icon to open it in you defaul
 ### v0.1
 - Initial release
 
-## Pending
+## TODO
 - Add Sparkle
 
 
