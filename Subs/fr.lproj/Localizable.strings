@@ -1,0 +1,25 @@
+/*
+ Localizable.strings
+ Subs
+ 
+ Created by Javier Querol on 8/10/14.
+ Copyright (c) 2014 Javier Querol. All rights reserved.
+ */
+
+"Loading file" = "Chargement de fichier";
+"Downloading subtitles" = "Téléchargement sous-titres";
+"Save subtitle" = "Enregistrer des sous-titres";
+"Playing video" = "Lecture vidéo";
+"Playing with subtitles" = "Jouer avec des sous-titres";
+"Permission not granted" = "Permission refusée";
+"Subtitles not found" = "Sous-titres introuvable";
+"No connection, playing video" = "Pas de connexion, lecture vidéo";
+
+"Launch at Login" = "Lancement lors de la connexion";
+"Select Language:" = "Sélectionnez la langue:";
+"Drag and drop video file onto the icon on menubar" = "Faites glisser et le fichier vidéo de goutte sur l'icône sur la barre de menus";
+"Quit" = "Quitter";
+"OK" = "OK";
+
+"Cancel" = "Annuler";
+"Play Anyway" = "Reproduire";

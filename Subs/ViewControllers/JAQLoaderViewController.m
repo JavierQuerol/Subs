@@ -59,6 +59,12 @@
 	
 	self.quitMenu.title = NSLocalizedString(@"Quit", nil);
 	
+	NSRange range = NSMakeRange(0, self.startAtLoginButton.title.length);
+	NSMutableAttributedString *attributedButtonTitle = [[NSMutableAttributedString alloc] initWithString:self.startAtLoginButton.title];
+	[attributedButtonTitle addAttribute:NSForegroundColorAttributeName value:[NSColor labelColor] range:range];
+	[attributedButtonTitle addAttribute:NSFontAttributeName value:[NSFont systemFontOfSize:[NSFont systemFontSize]] range:range];
+	[self.startAtLoginButton setAttributedTitle:attributedButtonTitle];
+	
 	self.instructions.font = [JAQUtils calculateFontToFitRect:NSMakeRect(0, 0, self.view.bounds.size.width-10, self.instructions.frame.size.height-1)
 													  minFont:7
 													  maxFont:11

@@ -1,0 +1,25 @@
+/*
+ Localizable.strings
+ Subs
+ 
+ Created by Javier Querol on 8/10/14.
+ Copyright (c) 2014 Javier Querol. All rights reserved.
+ */
+
+"Loading file" = "加载文件";
+"Downloading subtitles" = "字幕下载";
+"Save subtitle" = "保存字幕";
+"Playing video" = "播放视频";
+"Playing with subtitles" = "带字幕的视频播放";
+"Permission not granted" = "未授予权限";
+"Subtitles not found" = "找不到字幕";
+"No connection, playing video" = "无连接，播放视频";
+
+"Launch at Login" = "启动时登录";
+"Select Language:" = "选择语言";
+"Drag and drop video file onto the icon on menubar" = "拖放视频文件到菜单栏上的图标";
+"Quit" = "退出";
+"OK" = "OK";
+
+"Cancel" = "取消";
+"Play Anyway" = "复制";

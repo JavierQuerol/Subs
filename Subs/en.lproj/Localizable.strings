@@ -1,0 +1,25 @@
+/*
+ Localizable.strings
+ Subs
+ 
+ Created by Javier Querol on 8/10/14.
+ Copyright (c) 2014 Javier Querol. All rights reserved.
+ */
+
+"Loading file" = "Loading file";
+"Downloading subtitles" = "Downloading subtitles";
+"Save subtitle" = "Save subtitle";
+"Playing video" = "Playing video";
+"Playing with subtitles" = "Playing with subtitles";
+"Permission not granted" = "Permission not granted";
+"Subtitles not found" = "Subtitles not found";
+"No connection, playing video" = "No connection, playing video";
+
+"Launch at Login" = "Launch at Login";
+"Select Language:" = "Select Language:";
+"Drag and drop video file onto the icon on menubar" = "Drag and drop video file onto the icon on menubar";
+"Quit" = "Quit";
+"OK" = "OK";
+
+"Cancel" = "Cancel";
+"Play Anyway" = "Play Anyway";
