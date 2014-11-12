@@ -1,3 +1,6 @@
+# Subs
+![Subs](https://raw.githubusercontent.com/JavierQuerol/Subs/master/Subs/Images.xcassets/AppIcon.appiconset/Icon_128x128@2x.png)
+
 ## Download
 You can download the app ready to use [here](http://javierquerol.es/subs)
 
