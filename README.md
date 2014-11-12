@@ -1,15 +1,16 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/JavierQuerol/Subs/master/Subs/Images.xcassets/AppIcon.appiconset/Icon_128x128@2x.png" alt="Subs" title="Subs">
 </p>
-# Subs
+# SUBS
 [![Twitter](http://img.shields.io/badge/contact-@javierquerol-blue.svg?style=flat)](http://twitter.com/javierquerol)
 [![GitHub Issues](http://img.shields.io/github/issues/javierquerol/Subs.svg?style=flat)](http://github.com/javierquerol/Subs/issues)
+[![OSX Version](http://img.shields.io/github/tag/javierquerol/Subs.svg?style=flat)](http://github.com/javierquerol/Subs/issues)
 
 ## Download
-You can download the app ready to use [here](http://javierquerol.es/subs)
+You can download the app ready to use [here](http://javierquerol.es/subs).
 
 ## How to use
-Simply drag and drop a video file onto the menubar icon to open it in you default movie player with automatic subtitle download
+Simply drag and drop a video file onto the menubar icon to open it in you default movie player with automatic subtitle download.
 
 ## 3rd party libraries
 - [YRKSpinningProgressIndicator](https://github.com/kelan/yrk-spinning-progress-indicator)
