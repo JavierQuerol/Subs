@@ -114,7 +114,6 @@
 - (void)request:(XMLRPCRequest *)request didReceiveResponse:(XMLRPCResponse *)response {
 	NSString *status = response.object[@"status"];
 	if ([status isEqualToString:@"414 Unknown User Agent"]) {
-		[self notifyDelegateSomethingWrong];
 		return;
 	}
 	
