@@ -58,13 +58,11 @@
 	NSDecimalNumber *decimalFilesize = [NSDecimalNumber decimalNumberWithString:filesize.stringValue];
 	
 	if (decimalFilesize &&hash && _languageString && _authToken){
-		NSDictionary *params = @{
-								 @"moviebytesize" : decimalFilesize,
-								 @"moviehash" : hash,
-								 @"sublanguageid" : _languageString
-								 };
+		NSDictionary *params = @{@"moviebytesize":decimalFilesize,
+								 @"moviehash":hash,
+								 @"sublanguageid":_languageString};
 		
-		[request setMethod:@"SearchSubtitles" withParameters:@[_authToken, @[params] ]];
+		[request setMethod:@"SearchSubtitles" withParameters:@[_authToken,@[params]]];
 		
 		NSString *searchHashCompleteID  = [NSString stringWithFormat:@"Search%@Complete", hash];
 		[_blockResponses setObject:[searchResult copy] forKey:searchHashCompleteID];
@@ -158,7 +156,9 @@
 	return YES;
 }
 
-- (void)request:(XMLRPCRequest *)request didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {}
+- (void)request:(XMLRPCRequest *)request didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
+	
+}
 
 - (void)request:(XMLRPCRequest *)request didCancelAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
 	[self notifyDelegateSomethingWrong];

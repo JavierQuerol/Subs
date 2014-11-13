@@ -40,8 +40,6 @@ typedef struct {
 	
 	self.fileHash = [NSString stringWithFormat:@"%llX", hash.fileHash];
 	self.fileSize = [NSNumber numberWithUnsignedLongLong:hash.fileSize];
-	
-	NSLog(@"hash: %@,size: %@",self.fileHash,self.fileSize);
 }
 
 + (JAQVideoHashValues)hashForFile:(NSFileHandle*)handle {
@@ -60,8 +58,7 @@ typedef struct {
 	fileDataBegin = [handle readDataOfLength:(NSUInteger)CHUNK_SIZE];
 	[handle seekToEndOfFile];
 	unsigned long long fileSize = [handle offsetInFile];
-	if(fileSize < CHUNK_SIZE )
-		return retHash;
+	if (fileSize < CHUNK_SIZE) return retHash;
 	
 	[handle seekToFileOffset:MAX(0,fileSize-CHUNK_SIZE) ];
 	fileDataEnd = [handle readDataOfLength:(NSUInteger)CHUNK_SIZE];
@@ -69,12 +66,14 @@ typedef struct {
 	hash += fileSize;
 	
 	uint64_t * data_bytes= (uint64_t*)[fileDataBegin bytes];
-	for( int i=0; i< CHUNK_SIZE/sizeof(uint64_t); i++ )
-		hash+=data_bytes[i];;
+	for (int i=0; i< CHUNK_SIZE/sizeof(uint64_t); i++) {
+		hash+=data_bytes[i];
+	}
 	
 	data_bytes= (uint64_t*)[fileDataEnd bytes];
-	for( int i=0; i< CHUNK_SIZE/sizeof(uint64_t); i++ )
+	for (int i=0; i< CHUNK_SIZE/sizeof(uint64_t); i++) {
 		hash+= data_bytes[i];
+	}
 	
 	retHash.fileHash = hash;
 	retHash.fileSize = fileSize;

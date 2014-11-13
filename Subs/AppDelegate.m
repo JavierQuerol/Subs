@@ -177,7 +177,7 @@ typedef enum : NSUInteger {
 			text = [JAQUtils attributedStringWithHeader:NSLocalizedString(@"Subtitles not found", nil) text:video.name];
 			break;
 		case JAQVideoNoConnection:
-			text = [JAQUtils attributedStringWithHeader:NSLocalizedString(@"No connection, playing video",nil) text:nil];
+			text = [JAQUtils attributedStringWithHeader:NSLocalizedString(@"No connection, playing video",nil) text:@""];
 			break;
 		default:
 			break;
