@@ -17,18 +17,15 @@
 		04B37BA21A126F330079594F /* JAQVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37B9F1A126F330079594F /* JAQVideo.m */; };
 		04B37BA31A126F330079594F /* JAQSubtitleResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37BA11A126F330079594F /* JAQSubtitleResult.m */; };
 		04B37BA71A126F5E0079594F /* JAQDraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37BA61A126F5E0079594F /* JAQDraggableView.m */; };
-		04B37BAF1A126F720079594F /* JAQTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37BAA1A126F720079594F /* JAQTutorialViewController.m */; };
-		04B37BB01A126F720079594F /* JAQTutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B37BAB1A126F720079594F /* JAQTutorialViewController.xib */; };
 		04B37BB11A126F720079594F /* JAQLoaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37BAD1A126F720079594F /* JAQLoaderViewController.m */; };
 		04B37BB21A126F720079594F /* JAQLoaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B37BAE1A126F720079594F /* JAQLoaderViewController.xib */; };
 		04B37BB61A126F8D0079594F /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37BB51A126F8D0079594F /* LaunchAtLoginController.m */; };
-		04B37BBD1A126F990079594F /* KBButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37BB81A126F990079594F /* KBButton.m */; };
-		04B37BBE1A126F990079594F /* KBButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37BBA1A126F990079594F /* KBButtonCell.m */; };
-		04B37BBF1A126F990079594F /* NSColor+ColorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37BBC1A126F990079594F /* NSColor+ColorExtensions.m */; };
 		04B37BC21A126FA20079594F /* YRKSpinningProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37BC11A126FA20079594F /* YRKSpinningProgressIndicator.m */; };
 		04B37BC81A126FB80079594F /* JAQUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37BC51A126FB80079594F /* JAQUtils.m */; };
 		04B37BC91A126FB80079594F /* JAQSubtitleDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B37BC71A126FB80079594F /* JAQSubtitleDownloader.m */; };
 		04B7DC0E1A12BB6000B3EA1D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B7DC0D1A12BB6000B3EA1D /* libz.dylib */; };
+		04E5B8971A1513C6007C1B52 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E5B8961A1513C6007C1B52 /* Sparkle.framework */; };
+		04E5B8981A1513D4007C1B52 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 04E5B8961A1513C6007C1B52 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2AAB96708E51C3063F3511A7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2633524794EF325907477144 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +38,19 @@
 			remoteInfo = Subs;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04E5B8931A1511CE007C1B52 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				04E5B8981A1513D4007C1B52 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0418376B1A12C7F100F07E0E /* PFMoveApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMoveApplication.h; sourceTree = "<group>"; };
@@ -72,20 +82,11 @@
 		04B37BA11A126F330079594F /* JAQSubtitleResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JAQSubtitleResult.m; path = Model/JAQSubtitleResult.m; sourceTree = "<group>"; };
 		04B37BA51A126F5E0079594F /* JAQDraggableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JAQDraggableView.h; path = Views/JAQDraggableView.h; sourceTree = "<group>"; };
 		04B37BA61A126F5E0079594F /* JAQDraggableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JAQDraggableView.m; path = Views/JAQDraggableView.m; sourceTree = "<group>"; };
-		04B37BA91A126F720079594F /* JAQTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JAQTutorialViewController.h; path = ViewControllers/JAQTutorialViewController.h; sourceTree = "<group>"; };
-		04B37BAA1A126F720079594F /* JAQTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JAQTutorialViewController.m; path = ViewControllers/JAQTutorialViewController.m; sourceTree = "<group>"; };
-		04B37BAB1A126F720079594F /* JAQTutorialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JAQTutorialViewController.xib; path = ViewControllers/JAQTutorialViewController.xib; sourceTree = "<group>"; };
 		04B37BAC1A126F720079594F /* JAQLoaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JAQLoaderViewController.h; path = ViewControllers/JAQLoaderViewController.h; sourceTree = "<group>"; };
 		04B37BAD1A126F720079594F /* JAQLoaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JAQLoaderViewController.m; path = ViewControllers/JAQLoaderViewController.m; sourceTree = "<group>"; };
 		04B37BAE1A126F720079594F /* JAQLoaderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JAQLoaderViewController.xib; path = ViewControllers/JAQLoaderViewController.xib; sourceTree = "<group>"; };
 		04B37BB41A126F8D0079594F /* LaunchAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAtLoginController.h; sourceTree = "<group>"; };
 		04B37BB51A126F8D0079594F /* LaunchAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAtLoginController.m; sourceTree = "<group>"; };
-		04B37BB71A126F990079594F /* KBButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBButton.h; sourceTree = "<group>"; };
-		04B37BB81A126F990079594F /* KBButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBButton.m; sourceTree = "<group>"; };
-		04B37BB91A126F990079594F /* KBButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBButtonCell.h; sourceTree = "<group>"; };
-		04B37BBA1A126F990079594F /* KBButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBButtonCell.m; sourceTree = "<group>"; };
-		04B37BBB1A126F990079594F /* NSColor+ColorExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+ColorExtensions.h"; sourceTree = "<group>"; };
-		04B37BBC1A126F990079594F /* NSColor+ColorExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+ColorExtensions.m"; sourceTree = "<group>"; };
 		04B37BC01A126FA20079594F /* YRKSpinningProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRKSpinningProgressIndicator.h; sourceTree = "<group>"; };
 		04B37BC11A126FA20079594F /* YRKSpinningProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRKSpinningProgressIndicator.m; sourceTree = "<group>"; };
 		04B37BC41A126FB80079594F /* JAQUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JAQUtils.h; path = Data/JAQUtils.h; sourceTree = "<group>"; };
@@ -94,6 +95,7 @@
 		04B37BC71A126FB80079594F /* JAQSubtitleDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JAQSubtitleDownloader.m; path = Data/JAQSubtitleDownloader.m; sourceTree = "<group>"; };
 		04B7DC0C1A12BB0900B3EA1D /* JAQConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JAQConstants.h; path = Data/JAQConstants.h; sourceTree = "<group>"; };
 		04B7DC0D1A12BB6000B3EA1D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		04E5B8961A1513C6007C1B52 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		2633524794EF325907477144 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		657DA9C8379B610350F77832 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		68BBE0D41BA98E8E076C965C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04B7DC0E1A12BB6000B3EA1D /* libz.dylib in Frameworks */,
+				04E5B8971A1513C6007C1B52 /* Sparkle.framework in Frameworks */,
 				2AAB96708E51C3063F3511A7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,9 +220,6 @@
 		04B37BA81A126F610079594F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				04B37BA91A126F720079594F /* JAQTutorialViewController.h */,
-				04B37BAA1A126F720079594F /* JAQTutorialViewController.m */,
-				04B37BAB1A126F720079594F /* JAQTutorialViewController.xib */,
 				04B37BAC1A126F720079594F /* JAQLoaderViewController.h */,
 				04B37BAD1A126F720079594F /* JAQLoaderViewController.m */,
 				04B37BAE1A126F720079594F /* JAQLoaderViewController.xib */,
@@ -232,7 +232,6 @@
 			children = (
 				0418376A1A12C7E500F07E0E /* PFMoveApplication */,
 				04B37BCA1A126FD70079594F /* YRKSpinningProgressIndicator */,
-				04B37BCB1A126FF90079594F /* KBButton */,
 				04B37BCC1A1270020079594F /* LaunchAtLoginController */,
 			);
 			name = Dependencies;
@@ -260,20 +259,6 @@
 			path = Dependencies/YRKSpinningProgressIndicator;
 			sourceTree = "<group>";
 		};
-		04B37BCB1A126FF90079594F /* KBButton */ = {
-			isa = PBXGroup;
-			children = (
-				04B37BB71A126F990079594F /* KBButton.h */,
-				04B37BB81A126F990079594F /* KBButton.m */,
-				04B37BB91A126F990079594F /* KBButtonCell.h */,
-				04B37BBA1A126F990079594F /* KBButtonCell.m */,
-				04B37BBB1A126F990079594F /* NSColor+ColorExtensions.h */,
-				04B37BBC1A126F990079594F /* NSColor+ColorExtensions.m */,
-			);
-			name = KBButton;
-			path = Dependencies/KBButton;
-			sourceTree = "<group>";
-		};
 		04B37BCC1A1270020079594F /* LaunchAtLoginController */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,6 +272,7 @@
 		71E13CC85155CBDC54729610 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04E5B8961A1513C6007C1B52 /* Sparkle.framework */,
 				04B7DC0D1A12BB6000B3EA1D /* libz.dylib */,
 				2633524794EF325907477144 /* libPods.a */,
 			);
@@ -315,6 +301,7 @@
 				04B37B781A126ED90079594F /* Resources */,
 				012F28313BD46777ABB450F3 /* Copy Pods Resources */,
 				04B7DC0F1A12BBCC00B3EA1D /* ShellScript */,
+				04E5B8931A1511CE007C1B52 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -354,6 +341,7 @@
 				TargetAttributes = {
 					04B37B791A126ED90079594F = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 4385X6LBF4;
 					};
 					04B37B8C1A126ED90079594F = {
 						CreatedOnToolsVersion = 6.1;
@@ -397,7 +385,6 @@
 				04B37B851A126ED90079594F /* Images.xcassets in Resources */,
 				04B37B881A126ED90079594F /* MainMenu.xib in Resources */,
 				04B37BB21A126F720079594F /* JAQLoaderViewController.xib in Resources */,
-				04B37BB01A126F720079594F /* JAQTutorialViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,16 +453,12 @@
 				0418376D1A12C7F100F07E0E /* PFMoveApplication.m in Sources */,
 				04B37BA31A126F330079594F /* JAQSubtitleResult.m in Sources */,
 				04B37BA71A126F5E0079594F /* JAQDraggableView.m in Sources */,
-				04B37BBF1A126F990079594F /* NSColor+ColorExtensions.m in Sources */,
 				04B37B811A126ED90079594F /* AppDelegate.m in Sources */,
 				04B37BB11A126F720079594F /* JAQLoaderViewController.m in Sources */,
 				04B37BC21A126FA20079594F /* YRKSpinningProgressIndicator.m in Sources */,
-				04B37BBE1A126F990079594F /* KBButtonCell.m in Sources */,
 				04B37BA21A126F330079594F /* JAQVideo.m in Sources */,
-				04B37BAF1A126F720079594F /* JAQTutorialViewController.m in Sources */,
 				04B37BC91A126FB80079594F /* JAQSubtitleDownloader.m in Sources */,
 				04B37BC81A126FB80079594F /* JAQUtils.m in Sources */,
-				04B37BBD1A126F990079594F /* KBButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,11 +590,31 @@
 			baseConfigurationReference = 657DA9C8379B610350F77832 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "Subs/Subs-Prefix.pch";
 				INFOPLIST_FILE = Subs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"Pods-AFNetworking\"",
+					"-l\"Pods-NSData+Base64\"",
+					"-l\"Pods-xmlrpc\"",
+					"-framework",
+					"\"CoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"Sparkle\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -620,11 +623,31 @@
 			baseConfigurationReference = 68BBE0D41BA98E8E076C965C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Javier Querol Morata (4385X6LBF4)";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "Subs/Subs-Prefix.pch";
 				INFOPLIST_FILE = Subs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"Pods-AFNetworking\"",
+					"-l\"Pods-NSData+Base64\"",
+					"-l\"Pods-xmlrpc\"",
+					"-framework",
+					"\"CoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"Sparkle\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "E1CA9CF3-AE90-40E1-90F0-6BEB26CC06D6";
 			};
 			name = Release;
 		};

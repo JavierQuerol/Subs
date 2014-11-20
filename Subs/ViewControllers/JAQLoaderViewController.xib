@@ -82,7 +82,7 @@
                         <constraint firstAttribute="height" constant="19" id="0e0-NM-ie6"/>
                         <constraint firstAttribute="width" constant="54" id="vk3-Ql-V5W"/>
                     </constraints>
-                    <popUpButtonCell key="cell" type="bevel" bezelStyle="regularSquare" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" pullsDown="YES" arrowPosition="noArrow" preferredEdge="maxY" autoenablesItems="NO" selectedItem="EKK-sp-1LT" id="hVO-VA-qm5">
+                    <popUpButtonCell key="cell" type="bevel" bezelStyle="regularSquare" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" pullsDown="YES" arrowPosition="noArrow" preferredEdge="maxY" autoenablesItems="NO" selectedItem="di2-Sp-u7R" id="hVO-VA-qm5">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="menu"/>
                         <menu key="menu" title="Menu" autoenablesItems="NO" id="ZRF-1K-7qL">
@@ -93,13 +93,14 @@
                                 <menuItem title="v" enabled="NO" id="Uv0-IL-Tap">
                                     <modifierMask key="keyEquivalentModifierMask"/>
                                 </menuItem>
-                                <menuItem title="Tutorial" id="EKK-sp-1LT">
+                                <menuItem title="Check for updates…" id="di2-Sp-u7R">
                                     <modifierMask key="keyEquivalentModifierMask"/>
                                     <connections>
-                                        <action selector="showTutorial:" target="-2" id="c96-V8-ldc"/>
+                                        <action selector="checkForUpdates:" target="58H-87-hdT" id="1Y3-ij-5vu"/>
                                     </connections>
                                 </menuItem>
-                                <menuItem title="Quit" keyEquivalent="q" id="P1p-7y-FmB">
+                                <menuItem title="Quit" id="P1p-7y-FmB">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
                                     <connections>
                                         <action selector="exitApp:" target="-2" id="V7W-ye-QJ3"/>
                                     </connections>
@@ -234,6 +235,7 @@ Gw
         </customView>
         <customObject id="9RT-lU-IPV" customClass="LaunchAtLoginController"/>
         <userDefaultsController representsSharedInstance="YES" id="ttW-Id-LgU"/>
+        <customObject id="58H-87-hdT" customClass="SUUpdater"/>
     </objects>
     <resources>
         <image name="NSActionTemplate" width="14" height="14"/>

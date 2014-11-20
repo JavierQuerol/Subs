@@ -10,11 +10,11 @@
 #import "JAQUtils.h"
 #import "JAQSubtitleDownloader.h"
 #import "JAQLoaderViewController.h"
-#import "JAQTutorialViewController.h"
 #import "JAQDraggableView.h"
 #import "JAQVideo.h"
 #import "JAQConstants.h"
 #import "PFMoveApplication.h"
+#import <Sparkle/Sparkle.h>
 
 typedef enum : NSUInteger {
 	JAQVideoPlaying,
@@ -24,7 +24,6 @@ typedef enum : NSUInteger {
 
 @interface AppDelegate () <NSPopoverDelegate, NSAlertDelegate, JAQDragStatusViewDelegate, JAQSubsDownloaderDelegate>
 @property (nonatomic, strong) JAQLoaderViewController *loaderView;
-@property (nonatomic, strong) JAQTutorialViewController *tutorialVC;
 @property (nonatomic, strong) JAQDraggableView *dragView;
 @property (nonatomic, strong) JAQVideo *currentVideo;
 @property (nonatomic, strong) NSStatusItem *statusItem;
@@ -53,17 +52,19 @@ typedef enum : NSUInteger {
 	[self configurePopover];
 	
 	if (![[NSUserDefaults standardUserDefaults] boolForKey:@"entered"]) {
-		_tutorialVC = [[JAQTutorialViewController alloc] initWithWindowNibName:@"JAQTutorialViewController"];
-		[_tutorialVC showWindow:nil];
-		
-		__weak AppDelegate *weakSelf = self;
-		_tutorialVC.closePressed = ^{
-			[weakSelf showPopover];
-		};
-		
+		dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+			[self showPopover];
+		});
 		[[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"entered"];
 		[[NSUserDefaults standardUserDefaults] synchronize];
 	}
+}
+
+- (void)applicationDidBecomeActive:(NSNotification *)notification {
+	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+		NSLog(@"Checking updates");
+		[[SUUpdater sharedUpdater] checkForUpdatesInBackground];
+	});
 }
 
 - (void)handleAppleEvent:(NSAppleEventDescriptor *)event withReplyEvent:(NSAppleEventDescriptor *)replyEvent {

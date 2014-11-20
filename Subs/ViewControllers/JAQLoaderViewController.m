@@ -10,7 +10,6 @@
 #import "JAQUtils.h"
 #import "JAQSubtitleDownloader.h"
 #import "YRKSpinningProgressIndicator.h"
-#import "JAQTutorialViewController.h"
 #import "JAQConstants.h"
 #import "AppDelegate.h"
 
@@ -35,8 +34,6 @@
 @property (nonatomic, weak) IBOutlet NSTextField *selectedLang;
 @property (nonatomic, weak) IBOutlet NSTextField *instructions;
 @property (nonatomic, weak) IBOutlet NSMenuItem *quitMenu;
-
-@property (nonatomic, strong) JAQTutorialViewController *tutorialVC;
 
 @property (nonatomic, copy) void(^alertClosePressed)();
 @property (nonatomic, copy) void(^alertPlayPressed)();
@@ -144,15 +141,6 @@
 
 - (IBAction)exitApp:(id)sender {
 	[[NSApplication sharedApplication] terminate:sender];
-}
-
-- (IBAction)showTutorial:(id)sender {
-	_tutorialVC = [[JAQTutorialViewController alloc] initWithWindowNibName:@"JAQTutorialViewController"];
-	[_tutorialVC showWindow:nil];
-	_tutorialVC.closePressed = ^{
-		AppDelegate *appDelegate = [NSApplication sharedApplication].delegate;
-		[appDelegate showPopover];
-	};
 }
 
 @end
