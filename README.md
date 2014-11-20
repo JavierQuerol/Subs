@@ -1,8 +1,13 @@
 ![Subs](http://javierquerol.es/subs/images/subsIcon.png)
 # SUBS - OSX Subtitle downloader
+[![Twitter](http://img.shields.io/badge/contact-@javierquerol-blue.svg?style=flat)](http://twitter.com/javierquerol)
+[![GitHub Issues](http://img.shields.io/github/issues/javierquerol/Subs.svg?style=flat)](http://github.com/javierquerol/Subs/issues)
+[![OSX Version](http://img.shields.io/github/tag/javierquerol/Subs.svg?style=flat)](http://github.com/javierquerol/Subs/issues)
 
 ## Download
-You can download the app ready to use [here](http://javierquerol.es/subs).
+You can download the app ready to use:
+
+[![Download](http://img.shields.io/badge/Download App-Subs-red.svg?style=flat)](http://javierquerol.es/subs)
 
 ## How to use
 Simply drag and drop a video file onto the menubar icon to open it in you default movie player with automatic subtitle download.
